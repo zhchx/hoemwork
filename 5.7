@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+int z;
+int rec(int x,int y)
+{
+    if(y==1){
+        return z;
+
+    }
+    z=z*rec(x,y-1);
+}
+main(){
+    int x,y,result;
+    cout <<"ÇëÊäÈëxºÍyµÄÖµ"<<endl;
+    cin >>x>>y;
+    z=x;
+    result=rec(x,y);
+    cout<<x<<"µÄ"<<y<<"´Î·½ÊÇ"<<result<<endl;
+}
